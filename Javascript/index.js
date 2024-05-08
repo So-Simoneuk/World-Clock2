@@ -18,8 +18,8 @@ function updateTime() {
       let miamiTimeElement = miamiElement.querySelector(".time");
       let miamiTime = moment().tz("America/Miami");
   
-      parisDateElement.innerHTML = parisTime.format("MMMM	Do YYYY");
-      parisTimeElement.innerHTML = parisTime.format(
+      miamiDateElement.innerHTML = miamiTime.format("MMMM	Do YYYY");
+      miamiTimeElement.innerHTML = miamiTime.format(
         "h:mm:ss [<small>]A[</small>]"
       );
     }
