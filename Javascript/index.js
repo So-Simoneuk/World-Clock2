@@ -23,6 +23,18 @@ function updateTime() {
         "h:mm:ss [<small>]A[</small>]"
       );
     }
+
+    let castriesElement = document.querySelector("#castries");
+    if (castriesElement) {
+      let castriesDateElement = castriesElement.querySelector(".date");
+      let castriesTimeElement = castriesElement.querySelector(".time");
+      let castriesTime = moment().tz("America/St_Lucia");
+  
+      castriesDateElement.innerHTML = castriesTime.format("MMMM	Do YYYY");
+      castriesTimeElement.innerHTML = castriesTime.format(
+        "h:mm:ss [<small>]A[</small>]"
+      );
+    }
   }
   
   function updateCity(event) {
@@ -43,6 +55,7 @@ function updateTime() {
       "A"
     )}</small></div>
     </div>
+    <a href="/">All Locations</a>
     `;
   }
   
