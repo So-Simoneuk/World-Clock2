@@ -24,6 +24,7 @@ body {
     padding: 10px;
     border-color: #d2afff;
     border-style: groove;
+    height: 30px;
   }
   
   .container {
@@ -49,8 +50,10 @@ body {
   
   .date {
     opacity: 0.7;
-    line-height: 36px;
-    font-size: 20px;
+    font-size: 16px;
+    display: flex;
+    margin: 10px 0;
+    text-align: left;
 
   }
   
