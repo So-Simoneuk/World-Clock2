@@ -12,14 +12,14 @@ function updateTime() {
       );
     }
   
-    let miamiElement = document.querySelector("#miami");
-    if (miamiElement) {
-      let miamiDateElement = miamiElement.querySelector(".date");
-      let miamiTimeElement = miamiElement.querySelector(".time");
-      let miamiTime = moment().tz("America/Miami");
+    let saoPauloElement = document.querySelector("#sao_paulo");
+    if (saoPauloElement) {
+      let saoPauloDateElement = saoPauloElement.querySelector(".date");
+      let saoPauloTimeElement = saoPauloElement.querySelector(".time");
+      let saoPauloTime = moment().tz("America/Sao_Paulo");
   
-      miamiDateElement.innerHTML = miamiTime.format("MMMM	Do YYYY");
-      miamiTimeElement.innerHTML = miamiTime.format(
+      saoPauloDateElement.innerHTML = saoPauloTime.format("MMMM	Do YYYY");
+      saoPauloTimeElement.innerHTML = saoPauloTime.format(
         "h:mm:ss [<small>]A[</small>]"
       );
     }
